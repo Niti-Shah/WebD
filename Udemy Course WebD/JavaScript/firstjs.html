@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>
+            JavaScript Page
+        </title>
+
+        <style>
+            .circle{
+                height:100px;
+                width: 100px;
+                border-radius:50%;
+                float:left;
+                margin-right: 10px;
+            }
+
+            #blue{
+                background-color: blue;
+            }
+
+            #red{
+                background-color: red;
+            }
+
+            #yellow{
+                background-color: yellow;
+
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="alert('Hello N')">Click Me!</button>
+        <p id="text1">Hello World</p>
+
+        <p id="changetext">Thid is the text taht will change</p>
+        <button id="change" >Change text above</button>
+
+        <p id="changetext1">javascript is...</p>
+        <button id="change1" >Append text</button>
+
+        <p id="changetext2"></p>
+        <button id="change2" >Show text</button>
+
+        <p id="changetext3">This will get coloured</p>
+        <button id="change3" >Show color to text</button>
+
+        <p id="changetext4">This will disappear</p>
+        <button id="change4" >Hide Text</button>
+
+        <div class="circle" id="blue"></div>
+        <div class="circle" id="yellow"></div>
+        <div class="circle" id="red"></div>
+
+        <script type="text/JavaScript">
+            alert("This page is loading")
+
+            document.getElementById("text1").innerHTML="Hello Nitis!"
+
+            document.getElementById("change").onclick=function(){
+                document.getElementById("changetext").innerHTML="This is the chnaged text"
+            }
+
+            document.getElementById("change1").onclick=function(){
+                document.getElementById("changetext1").innerHTML= document.getElementById("changetext1").innerHTML+"Awesome"
+            }
+
+            document.getElementById("change2").onclick=function(){
+                document.getElementById("changetext2").innerHTML="Wohoo the text has appeared"
+            }
+
+            document.getElementById("change3").onclick=function(){
+                document.getElementById("changetext3").style.color="red"
+            }
+
+            document.getElementById("change4").onclick=function(){
+                document.getElementById("changetext4").style.display="none"
+            }
+
+            document.getElementById("blue").onclick=function(){
+                document.getElementById("blue").style.display="none"
+            }
+
+            document.getElementById("red").onclick=function(){
+                document.getElementById("red").style.display="none"
+            }
+
+            document.getElementById("yellow").onclick=function(){
+                document.getElementById("yellow").style.display="none"
+            }
+
+        </script>
+    </body>
+</html>

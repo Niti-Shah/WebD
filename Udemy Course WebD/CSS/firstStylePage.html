@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>Page one with style</title>
+        <style type="text/css">
+
+        /* p{
+            color:cadetblue;
+            font-size: 200%;
+
+        }
+
+        h1{
+            color:crimson;
+
+        } */
+
+        .red{
+            color:red;
+        }
+
+        .large{
+            font-size: 200%;
+        }
+
+        #green{
+            color:green;
+        }
+
+        .underline{
+            text-decoration: underline;
+        }
+
+        #first-section{
+            color:blue;
+            background-color:burlywood;
+            float:left;
+            width:250;
+        }
+
+        #second-section{
+            color:pink;
+            background-color: green;
+            float:right;
+            width: 250;
+        }
+
+        .clear-float{
+            clear:both;
+        }
+
+        #position1{
+            color:blue;
+            background-color:royalblue;
+            position:relative;
+            left:100px;
+            top:100px;
+            z-index: 1;
+        }
+
+        #position2{
+            color:pink;
+            background-color:aqua;
+            position:relative;
+            left:200px;
+            top:-50px;
+            z-index: 2;
+        }
+
+        #margin1{
+            color:pink;
+            background-color:rgb(0, 255, 42);
+            margin-left: 190px;
+            
+        }
+
+        #margin2{
+            color:pink;
+            background-color:rgb(233, 29, 124);
+            margin: 50px 20px;
+            padding: 20px 10px 30px 40px;
+        }
+
+        #red{
+           
+            background-color:red;
+        }
+
+        #blue{
+           
+            background-color:blue;
+        }
+
+        #green1{
+            
+            background-color:green;
+        }
+
+        .square{
+            height:100px;
+            width:100px;
+            margin: 10px;
+            float: left;
+        }
+
+        p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        a{
+            text-decoration: italic;
+        }
+        a:hover{
+            text-decoration: underline;
+            color:aquamarine;
+        }
+
+        </style>
+    </head>
+
+    <body>
+         <p class="red large"><!-- <p styling="color:red;font-size:150%"> -->
+            This is just a line to experiment stying on
+        </p>
+        <p class="large">woah external css is pretty cool</p>
+        <h1 class="red">this is inside an h1 tag <span class="underline">and this part is underlined using the span tag</span></h1>
+        <p id="green">Here we are using the "id" tag instead of clasas. the differnece is that IDs can be used only once per page and class can be used multiple times</p>
+        <div id="first-section">
+            <p>This is the content of the first para in the div tag</p>
+            <p>This is the second line</p>
+        </div>
+
+        <div id="second-section">
+            <p>This is the first lineof div-2</p>
+            <p>This is the second line of div-2 and this div is gonna be pink and green</p>
+        </div>
+
+        
+        <p>This is another line in a p tag but not in a div tag anf not floated therefore itll be seen bw the two floated divs and adjust itself according to the gap available</p>
+        <div class="clear-float">
+            <p>
+                this is another lne insode p tag but this is also inside the div tag without floating and clear ob both sides!
+            </p>
+        </div>
+
+        <div id="position1">
+            <p>This is the content of the first para in the div tag</p>
+            <p>This is the second line</p>
+        </div>
+
+        <div id="position2">
+            <p>This is the first lineof div-2</p>
+            <p>This is the second line of div-2 and this div is gonna be pink and green</p>
+            <p>we are also using z index here, with which we can choose if two oerlapping elements are there whivh one stays above which-the one with higher z index stays above</p>
+        </div>
+
+        <div id="margin1">
+            <p>This is the content of the first para in the div tag</p>
+            <p>This is the second line</p>
+        </div>
+
+        <div id="margin2">
+            <p>This is the first lineof div-2</p>
+            <p>This is the second line of div-2 and this div is gonna be pink and green</p>
+            <p>we are using margins here along with padding</p>
+        </div>
+
+        <div id="red" class="square">
+           
+        </div>
+
+        <div id="blue" class="square">
+           
+        </div>
+
+        <div id="green1" class="square">
+           
+        </div>
+
+        <p>This is some text to experiment font on</p>
+        <a href "https://www.google.com">Click on this link</a>
+    
+    </body>
+</html>

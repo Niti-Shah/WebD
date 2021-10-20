@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>
+            Jquery Page
+        </title>
+
+        <script type="text/javascript" src="jquery.min.js"></script>
+
+        <style>
+            #circle{
+                background-color: blue;
+                height: 50px;
+                width: 50px;
+                margin: 10px;
+                border-radius: 50%;
+            }
+
+            #square{
+                background-color: blue;
+                height: 50px;
+                width: 50px;
+                margin: 10px;
+               
+            }
+
+            #disappearingsq{
+                background-color: rgb(201, 129, 189);
+                height: 50px;
+                width: 50px;
+                margin: 10px;
+            }
+
+            #animatedcircle{
+                background-color: rgb(135, 209, 116);
+                height: 50px;
+                width: 50px;
+                margin: 10px;
+                border-radius: 50%;
+
+            }
+        </style>
+
+    </head>
+
+    <body>
+        hi there!
+
+        <div id="circle"></div>
+        <div id="square"></div>
+        <div id="square"></div>
+        <p id="circletext">This is the text below circle</p>
+        <div id="disappearingsq"></div>
+        <button id="fadeouttext">click to make square disappear</button>
+        <div id="animatedcircle"></div>
+
+        <script type="text/javascript">
+        if(typeof jQuery =="undefined")
+        {
+            alert("JQuery is not installed")
+        }
+        else{
+            alert("JQuery is installed successfully")
+
+        }
+
+        $("#circle").click(function(){
+            $("#circle").css("background-color","red");
+        });
+
+        $("#circle").hover(function(){
+            $("#circletext").html("This text is the changed text")
+        });
+       
+
+
+        $("#square").click(function(){
+            alert("one of the squares was clicked")
+        });
+
+        // we can also use $(this)to perform action a particular item clicked or something
+
+        $("#fadeouttext").click(function(){
+            $("#disappearingsq").fadeOut();
+        });
+
+        $("#animatedcircle").click(function(){
+            
+            $("#animatedcircle").animate({
+                width:"100px",
+                height:"100px",
+                marginLeft:"100px",
+                marginRight:"100px"
+               }, 2000);
+        });
+
+        </script>
+    </body>
+</html>

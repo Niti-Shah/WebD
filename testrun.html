@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Assignment Solution for Module 2</title>
+<meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="author" content="Ahsan Farooq Khan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+* {
+  box-sizing:border-box;
+}
+
+.left {
+  background-color:#2196F3;
+  margin-bottom: 2%;
+  position: relative;
+  margin-right:7px;
+  margin-left:7px;
+  border:black;
+  padding:0%;
+  float:left;
+  width:32%; /* The width is 20%, by default */
+}
+
+.main {
+    margin-top: 0%;
+    margin-bottom: 2%;
+    border:black;
+    padding:0%;
+    position: relative;
+  margin-right:7px;
+  margin-left:7px; 
+  background-color:brown;
+  float:left;
+  width: 32%; /* The width is 60%, by default */
+}
+
+.right {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    border:black;
+    padding:0%;
+  margin-left:7px;
+  position: relative;
+  margin-right:7px;
+  background-color:#4CAF50;
+  float:left;
+  width:32%; /* The width is 20%, by default */
+}
+.box{
+  margin-top: 0%;
+    margin-bottom: 0%;
+    border:black;
+  padding:2px;
+  margin-right:0px;
+  position:sticky;
+  display: block;
+  margin-right:0px;
+  background-color:lightgray;
+  float: right;
+  width:25%;
+  
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:95%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:95%;
+  }
+}
+
+</style>
+
+</head>
+<body >
+    <h1 style="margin-top:5%; text-align:center; position:relative"> Our Menu</h1>
+    <div style="position: relative; display: block;" >
+    <div style="display: block; position: relative;" class="left">
+   <div class="box" ><p>Chicken</p></div>
+            <p style="margin-top: 10%;" > 
+             Borders and Colors: Each section should have a background color set to some color (of your choosing).
+            Set the background color of each section title region to some unique color (of your choosing).
+            Make sure that the background color still allows the user to view the text in the section and
+            section title regions</p> 
+            
+    </div>
+    <div style="display: block; position: relative;" class="main">
+    <div  class="box"><p>Beef</p></div>
+        <p style="margin-top: 10%;">Borders and Colors: Each section should have a background color set to some color (of your choosing).
+        Set the background color of each section title region to some unique color (of your choosing).
+        Make sure that the background color still allows the user to view the text in the section and
+        section title regions</p> 
+        
+</div>
+<div style="display: block; position: relative;" class="right">
+    <div  class="box" ><p>Sushi</p></div>
+    <p style="margin-top: 10%;">Borders and Colors: Each section should have a background color set to some color (of your choosing).
+        Set the background color of each section title region to some unique color (of your choosing).
+        Make sure that the background color still allows the user to view the text in the section and
+        section title regions</p> 
+    
+</div>
+</div>
+</body>
+
+</html>

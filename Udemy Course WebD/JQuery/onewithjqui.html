@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>jQuery UI</title>
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="draggable">Drag me!</div>
+        <div id="accord">
+             <h2>Main Course</h2>
+             <div>
+                <p>MAin course items </p>
+             </div>
+             <h2>Dessert</h2>
+             <div>
+                <p>Dessert items </p>
+             </div>
+             <h2>Italian</h2>
+             <div>
+                <p>Italian items </p>
+             </div>
+             <h2>Mexican</h2>
+             <div>
+                <p>Mexican items </p>
+             </div>
+            
+        </div>
+
+        <ul id="sortable">
+            <li>Pizzza</li>
+            <li>Mcd</li>
+            <li>Mousse</li>
+            <li>Pasta</li>
+        </ul>
+        <script type="text/javascript">
+            $("#draggable").draggable({axis:"x"}); 
+            // similarly we can also implement resizble
+             // similarly we can also implement droppables
+             $("#accord").accordion();
+             $("#sortable").sortable();
+
+        </script>
+    </body>
+
+</html>
